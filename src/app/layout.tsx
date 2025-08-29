@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} ${poppins.variable} antialiased`}>{children}</body>
+      <SiteThemeProvider>
+        <body className={`${interTight.variable} ${poppins.variable} antialiased`}>{children}</body>
+      </SiteThemeProvider>
     </html>
   );
 }
